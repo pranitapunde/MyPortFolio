@@ -98,4 +98,11 @@
     .big-screen{
         display: none;
     }
+    .project-sec{
+        padding-right: 100px;
+    }
+    .projectCard{
+        padding-inline: 10px;
+    }
+    
 }
