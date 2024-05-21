@@ -104,5 +104,8 @@
     .projectCard{
         padding-inline: 10px;
     }
+    .skillCard{
+        padding-inline: 5px;
+    }
     
 }
