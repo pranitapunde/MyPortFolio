@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar start */
+.navbar {
+    background-color: white;
+    opacity: 0.9;
+    margin: 10px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pname {
+    color: rgb(9, 9, 212);
+    font-family: "Righteous", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: rgb(5, 5, 5);
+
+}
+
+
+@media (min-width: 991px) {
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2.5px;
+        background-color: rgb(1, 1, 80);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* Hero Sec */
+.heroSec {
+    background: url('../src/assets/Heroback.jpeg');
+    background-size: cover;
+}
+
+@media (max-width: 400px){
+    
+    .text-Design{
+        font-size: 30px;
+    }
+    .small-screen{
+        height: 20rem;
+        background-color: azure;
+    }
+    .homeScreen{
+        height: 30rem;
+    }
+    .big-screen{
+        display: none;
+    }
+}
